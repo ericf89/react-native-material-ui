@@ -120,7 +120,7 @@ class LeftElement extends PureComponent {
         if (!isSearchActive && React.isValidElement(leftElement)) {
             return (
                 <Animated.View style={styles.leftElementContainer}>
-                    {React.cloneElement(leftElement, { key: 'customLeftElement' })}
+                    { leftElement }
                 </Animated.View>
             );
         }
